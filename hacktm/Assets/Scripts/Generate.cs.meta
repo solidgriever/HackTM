@@ -1,10 +1,13 @@
 fileFormatVersion: 2
 guid: d2b29369d636dde44ae72b2bf1062fc0
-timeCreated: 1495825726
+timeCreated: 1495899062
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rocks: {fileID: 1113359805144492, guid: cc5e3a68e9a0c724e960a482902d58a2, type: 2}
+  - rocks2: {instanceID: 0}
+  - rocks3: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
