@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class Generate : MonoBehaviour
 {
+    public int flag = 0;
     public GameObject rocks;
     public GameObject rocks2;
     public GameObject rocks3;
@@ -31,37 +32,39 @@ public class Generate : MonoBehaviour
         rightStyle.fontSize = 20;
         rightStyle.alignment = TextAnchor.UpperRight;
         GUI.color = Color.white;
-        
-        GUILayout.Label(" Score: " + score.ToString());
-        GUI.Label(rect, "Time: " + timer.ToString(), rightStyle);
-        if(timer<6f)
-            GUI.Label(rect2, timer.ToString(), rightStyle);
+
+        // GUILayout.Label(" Score: " + score.ToString());
+        //GUI.Label(rect, "Time: " + timer.ToString(), rightStyle);
+        //if(timer<6f)
+            //GUI.Label(rect2, timer.ToString(), rightStyle);
     }
 
     void CreateObstacle()
     {
-        timer--;
+        timer--;       
+
         if (timer % 5 == 0)
             Instantiate(rocks3);
         else if (timer % 3 == 0)
-        {            
+        {
             if (Random.value < 0.5f)
                 Instantiate(rocks2);
-            else 
-                Instantiate(rocks4);           
-        }
-        else if(timer % 2 == 0)
-        {            
-            if (Random.value < 0.5f)
-                Instantiate(rocks);            
             else
-                Instantiate(rocks7);        }
+                Instantiate(rocks4);
+        }
+        else if (timer % 2 == 0)
+        {
+            if (Random.value < 0.5f)
+                Instantiate(rocks);
+            else
+                Instantiate(rocks7);
+        }
         else
         {
             if (Random.value < 0.5f)
                 Instantiate(rocks5);
-            else  
-                Instantiate(rocks3);            
+            else
+                Instantiate(rocks3);
         }
         score += 5;
     }
