@@ -96,6 +96,8 @@
     <Compile Include="Assets\MyScripts\ScoreCounter.cs" />
     <Compile Include="Assets\MyScripts\ShipMovement.cs" />
     <Compile Include="Assets\MyScripts\VerticalMovement.cs" />
+    <Compile Include="Assets\Scripts\Arcade.cs" />
+    <Compile Include="Assets\Scripts\Blink.cs" />
     <Compile Include="Assets\Scripts\Generate.cs" />
     <Compile Include="Assets\Scripts\GenerateCoins.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
