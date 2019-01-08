@@ -7,3 +7,4 @@ tematica:
 
 loading screen:
  				fpv player
+![](arcade_meltdown.gif)
